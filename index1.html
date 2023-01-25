@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+<div class="container align-content-center" id="imc-container">
+    <h2>Indice de Masa Corporal (IMC)</h2>
+    <p>El <b>IMC (Índice de masa corporal)</b> es una razón matemática que asocia la masa (peso) y la talla (altura) de un individuo y fue ideada por Adolphe Quetelet en 1832. el IMC, según la Organización Mundial de la Salud, es uno de los principales recursos para evaluar el estado nutricional de una persona.</p>
+</div>
+<div class="container text-center my-4 mx-auto" id="resultados">
+    <label for="data1">Introduzca su peso actual</label>
+    <input type="number" id="peso">
+    <label for="data1">Introduzca su altura</label>
+    <input type="number" id="altura">
+    <button id="btn-resultado">Consultar IMC</button>
+    <button id="reiniciar">Empezar otra vez</button>
+</div>
+    <div class="container" id="grafico">
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+<div class="container inactivo" id="imc-resultado">
+    <p id="parrafo-respuesta"></p>
+</div>
+
+<button id="imprimir">🖨️</button>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="script1.js"></script>
+    
+      
+</body>
+</html>

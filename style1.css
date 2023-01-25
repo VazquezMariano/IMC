@@ -1,0 +1,277 @@
+
+#grafico {
+  width: 100vw;
+  height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-container{
+  width: 1000px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px #36a2eb;
+  background: white;
+}
+
+/*Not gráfico*/
+
+#imc-container{
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  margin-top: 2rem;
+  background: linear-gradient(to top right,#5fb1f9, #2d6bfb) !important;
+}
+
+#resultados {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to top right,#5fb1f9, #2d6bfb) !important;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+label {
+  background-color: #20339d;
+  padding: 9px;
+  border-top-right-radius: 20px;
+  color: white;
+}
+
+input {
+  border-radius: 4px;
+  background-color: #475ddf;
+  color: white;
+}
+
+#btn-resultado {
+  background-color: #20339d;
+  padding: 9px;
+  color: white;
+  border-radius: 10px;
+}
+
+#reiniciar {
+  background-color: #20339d;
+  padding: 9px;
+  color: white;
+  border-radius: 10px;
+}
+
+#btn-resultado:hover {
+  background-color: #37dbfc;
+  padding: 9px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+}
+
+#btn-resultado:disabled {
+  background-color: #111d6287;
+  padding: 9px;
+  color: rgba(255, 255, 255, 0.705);
+  border-radius: 10px;
+}
+
+.activo {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 2.7rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  margin-top: 1rem;
+  background: linear-gradient(to top right,#5fb1f9, #2d6bfb) !important;
+  margin-bottom: 2rem;
+}
+
+.inactivo {
+  display: none
+}
+
+body {
+  background: lightblue;
+}
+
+#imprimir {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: calc(4.25rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  background: rgb(221, 219, 219);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 400px) {
+  input {
+    display: block;
+    width: 17.8rem;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    width: 17.8rem;
+    margin-bottom: 20px;
+    
+  }
+
+  #grafico {
+    width: 40vw;
+    height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chart-container{
+    width: 1000px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px #36a2eb;
+    background: white;
+  }
+}
+
+
+@media (min-width: 401px) and (max-width: 450px) {
+  input {
+    display: block;
+    width: 20rem;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    width: 20rem;
+    margin-bottom: 20px;
+    
+  }
+
+  #grafico {
+    width: 45vw;
+    height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chart-container{
+    width: 1000px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px #36a2eb;
+    background: white;
+  }
+
+}
+
+@media (min-width: 451px) and (max-width: 500px) { 
+  input {
+    display: block;
+    width: 24rem;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    width: 24rem;
+    margin-bottom: 20px;
+    
+  }
+
+  
+
+
+}
+
+
+@media (min-width: 501px) and (max-width: 650px) { 
+  input {
+    display: block;
+    width: 27rem;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    width: 27rem;
+    margin-bottom: 20px;
+    
+  }
+
+}
+
+
+@media (min-width: 651px) and (max-width: 770px) {  
+  input {
+    display: block;
+    width: 27rem;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    width: 27rem;
+    margin-bottom: 20px;
+    
+  }
+
+}
+@media (min-width: 771px) and (max-width: 850px) {
+  input {
+    display: block;
+    width: 40rem;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    width: 40rem;
+    margin-bottom: 20px;
+    
+  }
+
+}
+@media (min-width: 851px) and (max-width: 990px) {
+  input {
+    display: block;
+    width: 40rem;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    width: 40rem;
+    margin-bottom: 20px;
+    
+  }
+
+}
+@media (min-width: 1200px) {
+  input {
+    display: inline;
+  }
+  label {
+    display: inline;
+    margin: 10px;
+    
+  }
+  
+
+}
